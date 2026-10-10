@@ -9795,3 +9795,16 @@ section[id] {
     height: 24px !important;
   }
 }
+
+/* Two independent pricing carousels */
+.pricing-group {margin-top: 52px; min-width: 0;}
+.pricing-group + .pricing-group {margin-top: 84px;}
+.pricing-group__title {font: 400 clamp(29px,3.2vw,45px)/1.2 var(--font-display); margin:0 0 25px; letter-spacing:-.03em;}
+.pricing-group .consult-formats__viewport {min-width:0;}
+.pricing-group .consult-formats__grid {scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;}
+.pricing-group .consult-card {height:auto; min-height:440px;}
+.pricing-group .consult-card__description {margin-top:14px; line-height:1.5;}
+.pricing-group .consult-price {gap:12px;}
+.pricing-group .consult-price b {white-space:nowrap;}
+.pricing-group .consult-carousel-nav {display:flex !important; justify-content:center; margin-top:26px;}
+@media(max-width:620px){.pricing-group{margin-top:34px}.pricing-group + .pricing-group{margin-top:58px}.pricing-group .consult-card{min-height:390px}.pricing-group__title{margin-bottom:18px}.pricing-group .consult-price b{font-size:19px}}

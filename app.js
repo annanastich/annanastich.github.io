@@ -127,7 +127,8 @@ document.addEventListener("keydown", (e) => {
   const configs = [
     [".relations__grid", ".relation-card", "relations"],
     [".life-cases__grid", ".life-case", "situations"],
-    [".consult-formats__grid", ".consult-card", "formats"]
+    ['[data-price-track="consultations"]', ".consult-card", "consultations"],
+    ['[data-price-track="online-groups"]', ".consult-card", "online-groups"]
   ];
   configs.forEach(([selector, slideSelector, name]) => {
     const track = document.querySelector(selector);
